@@ -1,0 +1,20 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-1"> 1st <app-server></app-server> </div>
+        <div class="col-md-1"> 2nd <app-server></app-server> </div>
+        <div class="col-md-1"> 3rd <app-server></app-server> </div>
+        <!--<div class="col-md-1"><button [disabled]="!energ" (click)="onBTClick()">SUBMIT</button></div>
+        <div class="col-md-1"><input type="text" (input)="onPL($event)">{{ bttext }}</div>-->
+    </div>
+</div>
+<input type="text" (keyup)="onTyping($event)">
+<br><p *ngIf="cl">{{ keimeno }}</p><p *ngIf="!cl">WAITING</p><button (click)="onClick()">ADD</button>
+<!--<br><p *ngIf="cl; then yes else no"></p>
+<ng-template #yes>
+   <hr> {{ keimeno }} <hr>
+</ng-template>
+<ng-template #no>
+    <hr> no {{ keimeno }} <hr>
+ </ng-template>-->
+ <p [ngClass]= "{online: cl === true}"> ΗΛΙΚΙΑ <input type="text" [value]="age"></p>

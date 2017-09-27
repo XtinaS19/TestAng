@@ -1,0 +1,5 @@
+<ul>
+  <li *ngFor="let d of NameDays">{{ d }}</li> 
+</ul>
+<p *ngIf="RandomBool; else weekend">Week = {{ RandomBool }}</p>
+<ng-template #weekend>Yupii!!!! WEEKEND!!!!</ng-template>
