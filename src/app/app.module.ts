@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { ServerComponent} from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
 import { NewcompComponent } from './newcomp/newcomp.component';
-
+import { DataService } from './data.service'
 
 @NgModule({
   declarations: [
@@ -18,7 +18,7 @@ import { NewcompComponent } from './newcomp/newcomp.component';
   imports: [
     BrowserModule, FormsModule, HttpModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
